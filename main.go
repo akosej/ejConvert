@@ -29,16 +29,11 @@ func main() {
 				name := fi.Name()[:strings.LastIndex(fi.Name(), ".")]
 				ext := fi.Name()[strings.LastIndex(fi.Name(), ".")+1:]
 				if ext == cExt {
-					// Create new instance of transcoder
 					trans := new(transcoder.Transcoder)
-
-					// Initialize transcoder passing the input file path and output file path
 					err := trans.Initialize(fi.Name(), name+"."+aExt)
-					// Handle error...
 					if err != nil {
 						fmt.Println(err)
 					}
-					// Start transcoder process with progress checking
 					done := trans.Run(true)
 					progress := trans.Output()
 
@@ -64,5 +59,4 @@ func main() {
 			}
 		}
 	}
-
 }
