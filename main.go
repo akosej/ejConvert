@@ -1,16 +1,17 @@
 package main
 
 import (
-	"github.com/xfrr/goffmpeg/transcoder"
-	"github.com/sethgrid/multibar"
-	"strings"
 	"flag"
-	"sync"
 	"fmt"
+	"github.com/sethgrid/multibar"
+	"github.com/xfrr/goffmpeg/transcoder"
 	"os"
+	"strings"
+	"sync"
 )
 
 func main() {
+
 	flag.Parse()
 	cExt := flag.Arg(0)
 	aExt := flag.Arg(1)
