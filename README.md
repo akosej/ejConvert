@@ -13,6 +13,7 @@ Example of use. If you want to convert the avi files to mp4 that are in the dire
 ejConvert converts all the files that are inside the directory, with the specified extension, in this case it will convert all the .avi to .mp4 
 
 ```console
+cd /home/user/videos/
 ejConvert avi mp4
 ```
 
