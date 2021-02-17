@@ -3,7 +3,7 @@ Converter developed in golang, using ffmpeg libraries.
 
 ## Install Linux
 ```console
-curl -fsSL https://github.com/akosej/ejConver/raw/main/ejConvert
+wget https://github.com/akosej/ejConver/raw/main/ejConvert
 sudo cp ./ejConver /usr/local/bin/
 cudo chmod +x /usr/local/bin/ejConver
 ```
